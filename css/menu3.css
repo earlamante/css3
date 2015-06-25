@@ -1,0 +1,66 @@
+.menu {
+  min-height: 500px;
+  padding: 5px;
+}
+
+.menu__item {
+  margin: 0 0 5px;
+  box-shadow: 3px 3px 2px #888;
+  background-color: #ccc;
+  cursor: pointer;
+  padding: 10px 5px;
+  overflow: hidden;
+  -webkit-transition: all 300ms ease;
+     -moz-transition: all 300ms ease;
+          transition: all 300ms ease;
+  -webkit-transform-origin: left top;
+     -moz-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.menu__item > div {
+  box-sizing: border-box;
+  padding: 0 10px;
+  display: none;
+}
+
+.menu__link {
+  display: block;
+  float: left;
+  width: 90%;
+}
+
+.menu__icon {
+    margin: 0 8px 0 10px;
+    -webkit-transition: all 300ms ease;
+       -moz-transition: all 300ms ease;
+            transition: all 300ms ease;
+    -webkit-transform-origin: right center;
+       -moz-transform-origin: right center;
+            transform-origin: right center;
+    -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.menu__item.menu__item--hidden:hover {
+    background-color: #444;
+    -webkit-transform: translateY(-5px);
+       -moz-transform: translateY(-5px);
+            transform: translateY(-5px);
+}
+.menu__item.menu__item--hidden:hover a {
+  color: #eee;
+}
+.menu__item.menu__item--shown {
+  background-color: #444;
+  color: #d0d0d0;
+}
+
+.menu__item.menu__item--hidden:hover .menu__icon,
+.menu__item.menu__item--shown .menu__icon {
+    color: #e00;
+    -webkit-transform: scale(3);
+       -moz-transform: scale(3);
+            transform: scale(3);
+}
