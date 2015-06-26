@@ -24,23 +24,23 @@
   font-size: 200px;
   line-height: 170px;
   float: left;
+  color: #111;
 }
-.sm-wrapper span.fb {
-  color: #007;
+.sm-wrapper span.fb.active {
+  color: #1c407b;
 }
-.sm-wrapper span.tw {
-  color: #38d;
+.sm-wrapper span.tw.active {
+  color: #28aae1;
 }
-.sm-wrapper span.yt {
+.sm-wrapper span.yt.active {
   color: #b00;
 }
-.sm-wrapper span.tb {
-  color: #449;
+.sm-wrapper span.tb.active {
+  color: #304e6c;
 }
 .sm-wrapper:hover a span {
   margin-left: -171px;
 }
 .sm-wrapper a span.active {
-  color: #626;
   margin-left: -1px;
 }
