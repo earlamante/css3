@@ -20,25 +20,31 @@
   box-shadow: 3px 5px 3px #888;
   box-sizing: border-box;
   margin: auto;
-  overflow: hidden;
+  min-height: 45px;
+  overflow: visible;
   padding: 0 20px;
   width: 1200px;
+  z-index: 99;
   -webkit-border-top-left-radius: 10px;
           border-top-left-radius: 10px;
   -webkit-border-top-right-radius: 10px;
           border-top-right-radius: 10px;
 }
 
-#rnd-menu a {
+#main_menu li {
+  position: relative;
+  float: left;
+}
+
+#main_menu > li > a {
+  box-shadow: 1px 0 1px #999;
+  color: #fff;
   display: block;
-  min-width: 100px;
-  padding: 0 10px 0 20px;
   height: 30px;
   line-height: 30px;
-  float: left;
   margin: 15px 0 0 -10px;
-  color: #fff;
-  box-shadow: 1px 0 1px #999;
+  min-width: 100px;
+  padding: 0 10px 0 20px;
   -webkit-transition: all 200ms ease;
      -moz-transition: all 200ms ease;
           transition: all 200ms ease;
@@ -47,12 +53,52 @@
   -webkit-border-top-right-radius: 10px;
           border-top-right-radius: 10px;
 }
-#rnd-menu a:hover {
+#main_menu > li:hover > a {
   background-color: #666;
 }
-#rnd-menu a.active {
+#main_menu > li.active > a {
   background-color: #e6e6e6;
   color: #222;
+  z-index: 2;
+}
+
+#main_menu li > ul {
+  border-left: 1px solid #888;
+  box-shadow: 3px 3px 2px #999;
+  float: none;
+  height: 0;
+  margin-top: -1px;
+  margin-left: -10px;
+  overflow: hidden;
+  position: absolute;
+  -webkit-transition: all 200ms ease;
+     -moz-transition: all 200ms ease;
+          transition: all 200ms ease;
+}
+#main_menu li > ul li {
+  background-color: #666;
+  min-width: 200px;
+  padding: 7px 10px;
+  z-index: 99;
+}
+#main_menu li > ul a {
+  color: #eee;
+  display: block;
+}
+#main_menu li > ul li:hover {
+  background-color: #444;
+}
+#main_menu li.active > ul li:hover {
+  background: #88e;
+}
+#main_menu li.active > ul a {
+  color: #222;
+}
+#main_menu li.active > ul {
+  border-left: 1px solid #ddd;
+}
+#main_menu > li.active > ul li {
+  background-color: #e6e6e6;
 }
 
 .container {
@@ -62,7 +108,7 @@
   box-shadow: 3px 3px 2px #888;
   box-sizing: border-box;
   margin: auto;
-  padding: 20px 10px;
+  padding: 50px 10px;
   width: 1200px;
   -webkit-border-bottom-left-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -85,14 +131,7 @@ li {
 }
 
 h1 {
-  margin-bottom: 0;
-}
-h4 {
-  font-style: italic;
-  margin: 0;
-}
-h4 a {
-  color: #ddd;
+  text-shadow: 3px 3px 2px #222;
 }
 
 .info {
@@ -102,5 +141,4 @@ h4 a {
   border-bottom: 10px solid #222;
   color: #ddd;
   margin-bottom: 50px;
-  text-shadow: 3px 3px 2px #222;
 }
