@@ -20,24 +20,17 @@
   box-shadow: 3px 5px 3px #888;
   box-sizing: border-box;
   margin: auto;
-<<<<<<< HEAD
   min-height: 45px;
   overflow: visible;
   padding: 0 20px;
   width: 1200px;
   z-index: 99;
-=======
-  overflow: hidden;
-  padding: 0 20px;
-  width: 1200px;
->>>>>>> 98724f3d3ef8b93f842ce83b0c3b1cbd834897ec
   -webkit-border-top-left-radius: 10px;
           border-top-left-radius: 10px;
   -webkit-border-top-right-radius: 10px;
           border-top-right-radius: 10px;
 }
 
-<<<<<<< HEAD
 #main_menu li {
   position: relative;
   float: left;
@@ -52,18 +45,6 @@
   margin: 15px 0 0 -10px;
   min-width: 100px;
   padding: 0 10px 0 20px;
-=======
-#rnd-menu a {
-  display: block;
-  min-width: 100px;
-  padding: 0 10px 0 20px;
-  height: 30px;
-  line-height: 30px;
-  float: left;
-  margin: 15px 0 0 -10px;
-  color: #fff;
-  box-shadow: 1px 0 1px #999;
->>>>>>> 98724f3d3ef8b93f842ce83b0c3b1cbd834897ec
   -webkit-transition: all 200ms ease;
      -moz-transition: all 200ms ease;
           transition: all 200ms ease;
@@ -72,7 +53,6 @@
   -webkit-border-top-right-radius: 10px;
           border-top-right-radius: 10px;
 }
-<<<<<<< HEAD
 #main_menu > li:hover > a {
   background-color: #666;
 }
@@ -119,14 +99,6 @@
 }
 #main_menu > li.active > ul li {
   background-color: #e6e6e6;
-=======
-#rnd-menu a:hover {
-  background-color: #666;
-}
-#rnd-menu a.active {
-  background-color: #e6e6e6;
-  color: #222;
->>>>>>> 98724f3d3ef8b93f842ce83b0c3b1cbd834897ec
 }
 
 .container {
@@ -136,11 +108,7 @@
   box-shadow: 3px 3px 2px #888;
   box-sizing: border-box;
   margin: auto;
-<<<<<<< HEAD
   padding: 50px 10px;
-=======
-  padding: 20px 10px;
->>>>>>> 98724f3d3ef8b93f842ce83b0c3b1cbd834897ec
   width: 1200px;
   -webkit-border-bottom-left-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -163,18 +131,7 @@ li {
 }
 
 h1 {
-<<<<<<< HEAD
   text-shadow: 3px 3px 2px #222;
-=======
-  margin-bottom: 0;
-}
-h4 {
-  font-style: italic;
-  margin: 0;
-}
-h4 a {
-  color: #ddd;
->>>>>>> 98724f3d3ef8b93f842ce83b0c3b1cbd834897ec
 }
 
 .info {
@@ -184,8 +141,4 @@ h4 a {
   border-bottom: 10px solid #222;
   color: #ddd;
   margin-bottom: 50px;
-<<<<<<< HEAD
-=======
-  text-shadow: 3px 3px 2px #222;
->>>>>>> 98724f3d3ef8b93f842ce83b0c3b1cbd834897ec
 }
