@@ -2,8 +2,8 @@
   text-align: center;
 }
 .menu-wrapper {
-  display: inline-block;
-  margin: 0 20px 30px 0;
+  margin: 0 auto 30px;
+  width: 170px;
 }
 .menu-wrapper a {
   background: #44e;
@@ -241,7 +241,6 @@
 
 
 
-
 .menu-x2-wrapper span {
   background: none;
   width: 100px;
@@ -268,4 +267,55 @@
 .menu-x2-wrapper:hover span::after {
   top: 0;
   transform: rotate(-45deg);
+}
+
+
+
+.menu-play-wrapper a {
+  background: #f33;
+  overflow: hidden;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.menu-play-wrapper span {
+  background: none;
+  display: block;
+  position: absolute;
+  margin-left: -3px;
+  margin-top: -40px;
+  left: 30%;
+  top: 50%;
+
+  width: 0; 
+  height: 0; 
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 80px solid #eee;
+}
+
+.menu-play-wrapper:hover a {
+  background: #911;
+}
+.menu-play-wrapper:hover span {
+  height: 80px;
+  border-top: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 30px solid #eee;
+}
+.menu-play-wrapper span::after {
+  left: -80px;
+  width: 30px;
+  height: 1px;
+  background: #eee;
+  top: 0;
+  opacity: 1;
+}
+
+.menu-play-wrapper:hover span::after {
+  top: 0;
+  left: 20px;
+  height: 80px;
+  opacity: 1;
 }
