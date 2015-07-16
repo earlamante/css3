@@ -52,6 +52,16 @@
 .menu-wrapper:hover a {
   background: #33b;
 }
+
+
+.menu-ex-wrapper:hover span::before {
+  top: -50px;
+}
+.menu-ex-wrapper:hover span::after {
+  top: 50px;
+}
+
+
 .menu-arrow-wrapper:hover span {
   -webkit-transform: rotate(180deg);
      -moz-transform: rotate(180deg);
