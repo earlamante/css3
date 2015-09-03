@@ -1,0 +1,40 @@
+.content {
+  text-align: center;
+}
+.sm-wrapper {
+  display: inline-block;
+  margin: 0 20px 30px 0;
+  width: 40px;
+  overflow: hidden;
+}
+.sm-wrapper a {
+  display: block;
+  padding: 0;
+  width: 190px;
+  float: right;
+}
+.sm-wrapper,
+.sm-wrapper a,
+.sm-wrapper span {
+  -webkit-transition: all 400ms ease;
+     -moz-transition: all 400ms ease;
+          transition: all 400ms ease;
+}
+.sm-wrapper a {
+  font-size: 32px;
+}
+.sm-wrapper span {
+  color: #111;
+  font-size: 42px;
+}
+.sm-wrapper:hover {
+  width: 190px;
+}
+.sm-wrapper:hover span.fb {
+  color: #007;
+}
+.sm-wrapper:hover a span {
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
