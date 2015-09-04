@@ -33,6 +33,7 @@
 .sm-wrapper:hover span.fb {
   color: #007;
 }
+.sm-wrapper:hover i,
 .sm-wrapper:hover a span {
   -webkit-transform: rotate(360deg);
      -moz-transform: rotate(360deg);
